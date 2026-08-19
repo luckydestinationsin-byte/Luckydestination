@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyDestinations.in</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body class="fulldone">
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="./images/Car  Logo.png" alt="logo">
+            </div>
+            <div>
+                <h3>LuckyDestinations.in</h3>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Airport">Airport Taxi</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+       
+        <div class="overlay">
+
+            <h1>Travel Anywhere With Comfort</h1>
+
+            <p>
+                Airport Taxi • Outstation Trips • Tempo Traveller • Corporate Travel
+            </p>
+
+            <a href="#booking" class="btn">
+                Book Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="booking" id="booking">
+
+        <div class="container">
+
+            <h2>Book Your Ride</h2>
+
+            <form id="bookingForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <!-- Pickup -->
+                <div class="form-group">
+                    <label for="pickup">Pickup Location *</label>
+                    <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+                </div>
+
+                <!-- Drop -->
+                <div class="form-group">
+                    <label for="drop">Drop Location *</label>
+                    <input type="text" id="drop" name="drop" placeholder="Enter destination" required>
+                </div>
+
+                <!-- Travel Date -->
+                <div class="form-group">
+                    <label for="date">Travel Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+
+                <!-- Vehicle -->
+                <div class="form-group">
+                    <label for="vehicle">Select Vehicle *</label>
+                    <select id="vehicle" name="vehicle" required>
+                        <option value="">-- Select Vehicle --</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Tempo Traveller">Innova Hycross</option>
+                        <option value="Mini Bus">Innova Crysta</option>
+                           <option value="Mini Bus">Tempo Traveller(TT)</option>
+                    </select>
+                </div>
+
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="book-btn">
+                    🚖 Book Ride
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section id="services">
+
+        <div class="container">
+
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+
+                <div class="card">
+
+                    <h3>Airport Transfer</h3>
+
+                    <p>24×7 Airport Pickup & Drop with professional drivers.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Outstation Trips</h3>
+
+                    <p>Affordable outstation cab services across South India.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Corporate Travel</h3>
+
+                    <p>Reliable employee transportation for companies.</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Wedding Transport</h3>
+
+                    <p>Luxury buses and cars for weddings and events.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Fleet Section -->
+    <section id="Airport" class="fleet">
+        <div class="container">
+            <h2>Airport Taxi</h2>
+
+            <div class="fleet-grid">
+
+                <div class="fleet-card">
+                    <img src="images/sedan.jpg" alt="Sedan">
+                    <h3>Sedan</h3>
+                        <p class="card-text">&#8377 1199 with A/C</p>
+      <p >capacity:- 4+1 (Toll Optional)</p>
+       <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/inva_hycross.png" alt="SUV">
+                    <h3>Innova Hycross</h3>
+              
+                    <p class="card-text">&#8377 2399 with  A/C </p>
+      <p>capacity:- 7+1 (Toll Optional)</p>
+       <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/eritiga.png" alt="Tempo Traveller">
+                    <h3>Eritiga</h3>
+                  <p class="card-text">&#8377 1799 with  A/C </p>
+      <p>capacity:- 6+1 (Toll Optional)</p>
+       <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/Crysta.png" alt="Bus">
+                    <h3>Innova Crysta</h3>
+                    <p class="card-text">&#8377 2399 with  A/C </p>
+      <p>capacity:- 7+1 (Toll Optional)</p>
+       <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages -->
+    <section id="packages" class="fleet">
+        <div class="container">
+            <h2>Tour Packages</h2>
+
+            <div class="fleet-grid">
+
+                <div class="fleet-card">
+                    <img src="images/blr.webp" alt="Sedan">
+                    <h3>Bangalore Package Detail</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Bangalore Palace</li>
+                            <li>Cubbon Park</li>
+                            <li>ISKCON Temple</li>
+                            <li>Commercial Street</li>
+                            <li>Brigade Road</li>
+                            <li>UB City</li>
+                            <li>Vidhana Soudha</li>
+                            <li>Lalbagh Botanical Garden</li>
+                            <li>Tipu Sultan's Summer Palace</li>
+                            <li>Bangalore Fort </li>
+                        </ul>
+                        </p>
+                    </div><br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/ooty.webp" alt="SUV">
+                    <h3>Ooty Package Details</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Botanical Garden</li>
+                            <li>Rose Garden</li>
+                            <li>Doddabetta Peak</li>
+                            <li>Coonur Sight Seen</li>
+                            <li>Pine Forest</li>
+                            <li>Tea Factory</li>
+                            <li>Optionally Lake</li>
+                            <li>Shooting Point</li>
+                            <li>Pykara Boat House</li>
+                            <li>Pykara Waterfall</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/coorg.webp" alt="Tempo Traveller">
+                    <h3>coorg Package Details</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Golden Temple</li>
+                            <li>Talakavery</li>
+                            <li>Kaveri Nisargadhama Harangi Dam</li>
+                            <li>Glass Bridge</li>
+                            <li>Dobara Elephant Camp</li>
+                            <li>Abby Water Fall</li>
+                            <li>Coffee Plantatin Tour</li>
+                            <li>Madileri Fort</li>
+                            <li>Raja Seet Viewpoint Halt</li>
+                            <li>Mallali Waterfall Halt</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/mysore.webp" alt="Bus">
+                    <h3>Mysore Package Detail</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Chamundi Hill</li>
+                            <li>Nandhi Statue</li>
+                            <li>Wax Museum</li>
+                            <li>Sand Museum</li>
+                            <li>Bird Sanctuary</li>
+                            <li>Lalithamahal Palace</li>
+                            <li>Mysore Palace</li>
+                            <li>Afternoon Lunch & Shopping</li>
+                            <li>Mysore Zoo</li>
+                    </div>
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="fleet-card">
+                    <img src="images/wayanad.webp" alt="Sedan">
+                    <h3>Wayanad Sight Seeing</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Muthanga</li>
+                            <li>Wildlife Sanctuary</li>
+                            <li>Banasura Dam</li>
+                            <li>Glass Bridge</li>
+                            <li>Edakkal Caves</li>
+                            <li>Meen Muttil Waterfall</li>
+                            <li>Lakdi Viewpoint Pookode Lake</li>
+                            <li>Heritage Museum</li>
+                            <li>Kurva Island</li>
+                            <li>Tea States</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/coorg.webp" alt="SUV">
+                    <h3>Kerala Munnar Sight Seeing</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Allapey Boat House</li>
+                            <li>Tekady</li>
+                            <li>Jatayu</li>
+                            <li>Trivandrum</li>
+                            <li>Varakkal</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/chik.webp" alt="Tempo Traveller">
+                    <h3>Chikmagalur Sight Seeing</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Belur</li>
+                            <li>Kemangundi</li>
+                            <li>Halebeedu</li>
+                            <li>Yagachibackwater</li>
+                            <li>Kallathgirifalls</li>
+                            <li>Mullayangiri Peak
+                            </li>
+                            <li>Mahatma Gandhipark</li>
+                            <li>Siri coffee</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="images/sak.webp" alt="Bus">
+                    <h3>Sakaleshpura Sight Seeing</h3>
+                    <p class="card-text">
+                    <div class="lists">
+                        <ul>
+                            <li>Bettada Byraweswara Temple</li>
+                            <li>Etanbuja Trekking Point Museum
+                            </li>
+                            <li>Abbeygundi falls
+                            </li>
+                            <li>Nanzarbad fort</li>
+                    </div>
+                    <br>
+                    <a href="#booking" class="btn1">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+
+        <div class="container">
+
+            <h2>Why Choose Us?</h2>
+
+            <div class="features">
+
+                <div>
+                    <h3>24×7 Support</h3>
+                    <p>Always available for your travel needs.</p>
+                </div>
+
+                <div>
+                    <h3>Professional Drivers</h3>
+                    <p>Experienced and verified chauffeurs.</p>
+                </div>
+
+                <div>
+                    <h3>Affordable Pricing</h3>
+                    <p>No hidden charges and transparent billing.</p>
+                </div>
+
+                <div>
+                    <h3>Clean Vehicles</h3>
+                    <p>Well-maintained and sanitized fleet.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+
+        <div class="container">
+
+            <h2>What Our Customers Say</h2>
+
+            <div class="testimonial">
+
+                <p>
+                    "Excellent service and very punctual. Highly recommended!"
+                </p>
+
+                <h4>- Rahul Sharma</h4>
+
+            </div>
+            <br>
+            <div class="testimonial">
+
+                <p>
+                    "We booked a Tempo Traveller for our family trip.
+                    Fantastic experience."
+                </p>
+
+                <h4>- Priya Nair</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+
+            <p>
+                TravelGo Tours & Travels is committed to providing safe,
+                comfortable, and affordable transportation services. We
+                specialize in airport transfers, outstation trips,
+                corporate travel, family vacations, and group tours.
+            </p>
+ <br>
+            <p>
+                Our mission is to make every journey memorable through
+                professional service, clean vehicles, and experienced
+                drivers.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+
+                <div>
+
+                    <footer class="footer">
+                        <div class="footer-container">
+                            <div class="footer-col brand">
+                                <img src="./images/Car  Logo.png" alt="LuckyDestinations.in logo" class="footer-logo">
+                                <h2>
+                                    LuckyDestinations.in</h2>
+                                <p>Ride with comfort, Arrive with confidence.<br>
+                                    "your trusted Travel partner for every journey"
+                                </p>
+                            </div>
+
+                            <div class="footer-col">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="home">Book Now</a></li>
+                                    <li><a href="packages">Tour Packages</a></li>
+                                    <li><a href="Airport Taxi">Airport Taxi</a></li>
+                                   
+                                </ul>
+                            </div>
+
+                            <div class="footer-col contact">
+                                <h3>Contact Us</h3>
+<ul>
+                                <li><i class="fa fa-phone" style="font-size:24px"></i> +91 6362108105</li>
+                                <li><i class="fa fa-phone" style="font-size:24px"></i> +91 9591611058</li>
+                              <li><i class="fa fa-envelope" style="font-size:24px "></i>luckydestinations.in@gmail.com</li>
+                              
+                                <li><i class="fa fa-map-marker" style="font-size:24px"></i></i> Andrahalli, near acharya college, 80 feet
+                                    road Dgroup, Bengaluru, Karnataka 560091</li>
+                                </ul>
+                            </div>
+   <div class="footer-bottom">
+                            <p>© 2024
+                                LuckyDestinations.in | <a href="#">Terms Of Services</a> | <a href="#">Privacy
+                                    Policy</a> | Developed by  partha infosoft pvt ltd<a href="#"></a></p>
+                        </div>
+                        </div>
+                     
+                    </footer>
+                </div>
+
+            </div>
+
+
+
+            <script src="script.js"></script>
+
+
+
+</body>
